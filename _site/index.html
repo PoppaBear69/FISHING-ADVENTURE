@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <title>New York Today</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="p-">
+<body>
 
-    <nav>
-        <ul>
-            
-            <li class="t-">
-              <a href="/">Home</a>
-            </li>
-            
-            <li class="t-home">
-              <a href="/pages/">Home</a>
-            </li>
-            
-        </ul>
-    </nav>
+    <header>
+        <h1>Fishing Adventure</h1>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/photos/">Photos/Videos</a></li>
+        <li><a href="/regulations/">Local Regulations</a></li>
+    </ul>
+</nav>
+
+    </header>
 
     <main>
-        <h1>New York Today</h1>
         
+## Welcome to Fishing Adventure
+
+<p>Explore fishing spots, view our photos and videos, and stay up to date with local regulations.</p>
+
+<button id="openMap">My Area</button>
+
+<div id="mapContainer" class="map-popup" style="display: none;">
+    <iframe 
+        id="googleMap"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
     </main>
 
-    <script src="/assets/js/script.js"></script>
-
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

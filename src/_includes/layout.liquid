@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
     <header>
         <h1>Fishing Adventure</h1>
-        
-        <!-- Navigation Bar Placed Below Title -->
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/photos/">Photos/Videos</a></li>
-                <li><a href="/regulations/">Local Regulations</a></li>
-            </ul>
-        </nav>
+        {% include "navigation.liquid" %}
     </header>
 
     <main>
-        
+        {{ content }}
     </main>
-    
 
     <script src="/js/scripts.js"></script>
 </body>
