@@ -1,6 +1,7 @@
 ---
 title: Local Regulations
 layout: layout.html
+permalink: /regulations/
 ---
 
 ## Fishing Regulations in South Bay

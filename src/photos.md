@@ -1,6 +1,7 @@
 ---
-title: Photos & Videos
+title: Photos/Videos
 layout: layout.html
+permalink: /photos/
 ---
 
 ## Photos & Videos
