@@ -3,7 +3,7 @@ title: "Welcome to Fishing Adventure"
 layout: "layout.html"
 ---
 
-# Welcome to Fishing Adventure
+Welcome to Fishing Adventure
 
 Explore fishing spots, find the best locations, and stay updated with local regulations.
 
