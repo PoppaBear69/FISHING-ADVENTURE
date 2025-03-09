@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <title>{{ pageTitle }}</title>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="p-{{ pageClass }}">
+<body>
+
+    <header>
+        <h1>Fishing Adventure</h1>
+    </header>
 
     <nav>
         <ul>
-            {% for page in collections.page %}
-            <li class="t-{{page.data.pageClass}}">
-              <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
-            </li>
-            {% endfor %}
+            <li><a href="/">Home</a></li>
+            <li><a href="/photos/">Photos/Videos</a></li>
+            <li><a href="/regulations/">Local Regulations</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>{{ pageTitle }}</h1>
-        {{ content | raw }}
+        {{ content }}
     </main>
-
-    <script src="/assets/js/script.js"></script>
 
 </body>
 </html>
