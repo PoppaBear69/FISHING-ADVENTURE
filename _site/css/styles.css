@@ -82,3 +82,17 @@
   background: transparent;
   z-index: 999;
 }
+
+
+h1 {
+  display: flex;
+  align-items: center;
+  background-color: #4ea2de;
+  justify-content: center;
+  height: 100px;
+  color: white;
+}
+
+nav {
+  display: flex;
+}
