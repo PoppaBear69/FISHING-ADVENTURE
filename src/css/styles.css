@@ -1,5 +1,6 @@
 * {
-  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -109,10 +110,9 @@ body {
 }
 
 nav a {
-  background-color: rgb(59, 174, 59);
+  background-color: green;
   display: flex;
   border-radius: 5px;
-    
 }
 
 nav ul {
@@ -122,12 +122,16 @@ nav ul {
   padding: 24px;
   
 }
+
 a {
-  flex-grow: 1;
-  color: #d8d4d7;
+  
+  color: white;
 }
 
-
+p  {
+  max-width: 90%;
+  color: red;
+}
 
 
   
