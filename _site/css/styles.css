@@ -129,10 +129,14 @@ a {
 }
 
 p  {
-  font-size: 20çpx;
+  font-size: 20px;
   max-width: 90%;
   color: red;
 }
 
-
+.intro {
+  display: flex;
+  padding: 10px;
   
+
+}
