@@ -4,7 +4,11 @@ layout: layout.html
 permalink: /regulations/
 ---
 
+<<<<<<< HEAD
 # Local Fishing Regulations
+=======
+
+>>>>>>> 1d10e4e (Reinitialize Git repository)
 
 Make sure you stay up to date with the latest fishing regulations in your area.
 

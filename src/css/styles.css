@@ -30,6 +30,10 @@ body {
 
 /* ✅ Heading Styles */
 h1 {
+<<<<<<< HEAD
+=======
+  color: rgb(170, 59, 59);
+>>>>>>> 1d10e4e (Reinitialize Git repository)
   display: flex;
   justify-content: center;
   font-size: 70px;
@@ -41,7 +45,11 @@ h2 {
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #ffd3ad;
+>>>>>>> 1d10e4e (Reinitialize Git repository)
 }
 
 /* ✅ Navigation Bar */
@@ -86,7 +94,11 @@ main {
 p {
   padding: 15px;
   border-radius: 10px;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #ffd3ad;
+>>>>>>> 1d10e4e (Reinitialize Git repository)
   font-size: 20px;
   line-height: 1.5;
   width: 80%;
@@ -191,7 +203,11 @@ p {
   min-width: 300px;
   max-width: 450px;
   padding: 20px;
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.7);
+=======
+  background: rgba(26, 78, 127, 0.2);
+>>>>>>> 1d10e4e (Reinitialize Git repository)
   color: white;
   border-radius: 10px;
   text-align: center;
