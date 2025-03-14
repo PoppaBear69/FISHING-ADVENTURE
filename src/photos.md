@@ -6,7 +6,7 @@ permalink: /photos/
 
 
 <div class="gallery">
-    <h2>Photos</h2>
+    <h2>Catches</h2>
     <div class="photo-row">
         <img src="/images/blue.jpg" alt="Bluefish catch" class="enlargeable">
         <img src="/images/porgy.jpg" alt="Porgy catch" class="enlargeable">
@@ -15,7 +15,10 @@ permalink: /photos/
     </div>
 </div>
 
-<h2>Videos</h2>
+
+
+
+<h2>Action</h2>
 <div class="video-row">
     <video controls>
         <source src="/videos/fishing_action.mp4" type="video/mp4">
