@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>Fishing Adventures</h1>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=IM+Fell+Great+Primer:ital@0;1&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -21,24 +26,34 @@
 <div>
     <main>
         <h2>Photos &amp; Videos</h2>
-<h3>📸 Photos</h3>
 <div class="gallery">
-<p><img src="/images/blue.jpg" alt="Fishing Adventure Photo" class="gallery-item"></p>
-<p><img src="/images/ocean.png" alt="Fishing Adventure Photo" class="gallery-item"></p>
-<p><img src="/images/porgy.jpg" alt="Fishing Adventure Photo" class="gallery-item"></p>
-<p><img src="/images/striper.jpg" alt="Fishing Adventure Photo" class="gallery-item"></p>
+    <h2>Fishing Photos</h2>
+    <div class="photo-row">
+        <img src="/images/blue.jpg" alt="Bluefish catch" class="enlargeable">
+        <img src="/images/porgy.jpg" alt="Porgy catch" class="enlargeable">
+        <img src="/images/striper.jpg" alt="Striped bass catch" class="enlargeable">
+        <img src="/images/ocean.png" alt="Ocean view" class="enlargeable">
+    </div>
 </div>
-<h3>🎥 Videos</h3>
-<div class="videos">
+<h2>Fishing Videos</h2>
+<div class="video-row">
     <video controls>
-        <source src="/videos/video1.mp4" type="video/mp4">
+        <source src="/videos/fishing_action.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
     <video controls>
-        <source src="/videos/video2.mp4" type="video/mp4">
+        <source src="/videos/reeling_in.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
     <video controls>
-        <source src="/videos/video3.mp4" type="video/mp4">
+        <source src="/videos/catch_release.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
+</div>
+<!-- Lightbox Container for Enlarged Image -->
+<div id="lightbox">
+    <span id="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged Image">
 </div>
 
     </main>

@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
- <div class="container">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <h1>Fishing Adventures</h1>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=IM+Fell+Great+Primer:ital@0;1&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
-   
-        <header>
-            <h1>Fishing Adventures</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/photos/">Photos/Videos</a></li>
-                    <li><a href="/regulations/">Local Regulations</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        
+     <nav>
+            <ul class="nav-list"> 
+                <li><a href="/">Home</a></li>
+                <li><a href="/photos/">Photos/Videos</a></li>
+                <li><a href="/regulations/">Local Regulations</a></li>
+            </ul>
+        </nav>
+    </header>
+<div>
+    <main>
+        
+<h1>Fishing Adventures</h1>
 
-        <main>
-            
-<h2 class="intro">Welcome to Fishing Adventures</h2>
+<p>Explore fishing spots, view our photos and videos, and stay up to date with local regulations.</p>
 
-<p>I was introduced to fishing by my late "Uncle Sonny". My first few experiences where upstate at stocked lakes. It was exciting at first but once I tasted "THE SALT LIFE" I never looked back. For me there is nothing like it. The possibilites are far greater. Now I have a small center console boat that is kept not far from Smithpoint Bridge. I usually  cruise between the bridge and Moritches Bay.</p>
-
+<!-- ✅ Map Button (Only on Home Page) -->
 <button id="openMap">My Area</button>
 
-<div id="mapContainer" class="map-popup" style="display: none;">
-    <iframe 
-        id="googleMap"
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+<!-- ✅ Map Popup with Fully Corrected Google Maps Embed Link -->
+<div id="mapPopup">
+    <div class="map-content">
+        <button id="closeMap" class="close-btn">Close</button>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.402116277061!2d-72.80787802372903!3d40.772112871401754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e84f453e123abc%3A0x5fa123456789abcd!2sSmith%20Point%20Bridge%20to%20Moriches!5e0!3m2!1sen!2sus!4v1617313952337"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
 </div>
 
-<d class="back_image" style="background_image: url('../images/.ocesn.png')"></d
-        </main>
-    </div>
+    </main>
+</div>
+            
 
-    <script src="/js/scripts.js" defer></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
