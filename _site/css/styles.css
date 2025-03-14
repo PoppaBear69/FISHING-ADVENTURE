@@ -1,15 +1,65 @@
+/* General Styles */
 * {
-  max-width: 800px;
+  max-width: 900px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
+
+/* Background Image for the Entire Page */
 body {
-  background-color: rgb(220, 228, 241);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/* Styles for the map popup container */
+
+/* Header */
+h1 {
+  display: flex;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: white;
+  background-color: #4ea2de;
+}
+
+/* Navigation Bar */
+nav ul {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 25px;
+  padding: 40px;
+}
+
+nav a {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 4%;
+  background-color: rgb(134, 182, 62);
+  color: white;
+}
+
+/* Paragraphs */
+p {
+  font-size: 20px;
+  max-width: 90%;
+  color: red;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  padding: 10px;
+}
+
+/* Map Popup */
 .map-popup {
   position: fixed;
   top: 0;
@@ -58,10 +108,10 @@ body {
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -94,51 +144,13 @@ body {
   z-index: 999;
 }
 
-
-h1 {
-  display: flex;
-  font-size: 60px;
-  align-items: center;
-  background-color: #4ea2de;
-  justify-content: center;
-  height: 100px;
-  color: white;
-}
-
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  background-image: url("../images/ocean.png");
 
-
-
-nav ul {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  column-gap: 25px;
-  padding: 40px;
-  
-}
-nav a {
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 4%;
-  background-color: rgb(134, 182, 62);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
+  font-family: Arial, sans-serif;
 }
-
-
-p  {
-  font-size: 20px;
-  max-width: 90%;
-  color: red;
-}
-
-.intro {
-  display: flex;
-  padding: 10px;
-  
-
-}
-

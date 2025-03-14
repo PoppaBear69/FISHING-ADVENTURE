@@ -31,3 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("One or more elements not found in the document.");
     }
 });
+
+module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("src/images"); // Ensures images are copied to `_site`
+    return {
+      dir: {
+        input: "src",
+        output: "_site"
+      }
+    };
+  };
+  

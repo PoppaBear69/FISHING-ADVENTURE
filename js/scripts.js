@@ -13,3 +13,5 @@ module.exports = function (config) {
         }
     };
 };
+const Image = require("@11ty/eleventy-img");
+eleventyConfig.addPlugin(Image);

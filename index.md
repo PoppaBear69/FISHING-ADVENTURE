@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Welcome to Fishing Adventure"
 layout: "layout.html"
 ---
@@ -17,4 +17,4 @@ Fishing Adventure is dedicated to helping anglers find the best fishing spots, l
 
 ## Explore
 - [Fishing Photos & Videos](/photos/)
-- [Local Fishing Regulations](/regulations/)
+- [Local Fishing Regulations](/regulations/) -->

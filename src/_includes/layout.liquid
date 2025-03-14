@@ -10,13 +10,21 @@
 
     <header>
         <h1>Fishing Adventures</h1>
-        {% include "navigation.liquid" %}
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/photos/">Photos/Videos</a></li>
+                <li><a href="/regulations/">Local Regulations</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         {{ content }}
     </main>
+   
 
     <script src="/js/scripts.js"></script>
 </body>
 </html>
+

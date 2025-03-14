@@ -12,6 +12,7 @@ permalink: /photos/
     <img src="/images/photo2.jpg" alt="Big Catch">
     <img src="/images/photo3.jpg" alt="Sunset Fishing">
     <img src="/images/photo4.jpg" alt="On the Boat">
+        
 </div>
 
 ### Videos
