@@ -11,7 +11,7 @@ permalink: /photos/
         <img src="/images/blue.jpg" alt="Bluefish catch" class="enlargeable">
         <img src="/images/porgy.jpg" alt="Porgy catch" class="enlargeable">
         <img src="/images/striper.jpg" alt="Striped bass catch" class="enlargeable">
-        <img src="/images/ocean.png" alt="Ocean view" class="enlargeable">
+        <!-- <img src="/images/ocean.png" alt="Ocean view" class="enlargeable"> -->
     </div>
 </div>
 

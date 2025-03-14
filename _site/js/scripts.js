@@ -1,61 +1,69 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".enlargeable");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const closeLightbox = document.getElementById("close-lightbox");
-
-    // Map Elements (Only on Home Page)
     const mapPopup = document.getElementById("mapPopup");
     const mapButton = document.getElementById("openMap");
     const closeMap = document.getElementById("closeMap");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeLightbox = document.getElementById("close-lightbox");
+    const images = document.querySelectorAll(".enlargeable");
 
-    // Ensure lightbox starts hidden
-    if (lightbox) {
-        lightbox.style.display = "none";
-        lightboxImg.src = "";
-
-        images.forEach(img => {
-            img.addEventListener("click", function () {
-                console.log("Clicked image source:", this.src);
-                if (this.src) {
-                    lightboxImg.src = this.src;
-                    lightbox.style.display = "flex";
-                }
-            });
-        });
-
-        closeLightbox.addEventListener("click", function () {
-            lightbox.style.display = "none";
-            lightboxImg.src = "";
-        });
-
-        lightbox.addEventListener("click", function (e) {
-            if (e.target !== lightboxImg) {
-                lightbox.style.display = "none";
-                lightboxImg.src = "";
-            }
-        });
-    }
-
-    // ✅ Ensure map functionality works only on the home page
+    // ✅ Fix: Ensure the map pop-up opens correctly
     if (mapButton && mapPopup && closeMap) {
         mapButton.addEventListener("click", function () {
-            mapPopup.style.display = "flex";
+            mapPopup.style.display = "flex"; // Restore functionality
+            setTimeout(() => mapPopup.classList.add("show"), 10); // Smooth transition
         });
 
         closeMap.addEventListener("click", function () {
-            mapPopup.style.display = "none";
+            mapPopup.classList.remove("show");
+            setTimeout(() => (mapPopup.style.display = "none"), 300); // Smoothly hide
         });
 
         mapPopup.addEventListener("click", function (e) {
             if (e.target !== mapPopup.querySelector("iframe")) {
-                mapPopup.style.display = "none";
+                mapPopup.classList.remove("show");
+                setTimeout(() => (mapPopup.style.display = "none"), 300);
             }
         });
 
-        // Ensure map is hidden when the page loads
         window.addEventListener("load", function () {
+            mapPopup.classList.remove("show");
             mapPopup.style.display = "none";
+        });
+    }
+
+    // ✅ Fix: Ensure the Lightbox works correctly
+    if (lightbox) {
+        images.forEach(img => {
+            img.addEventListener("click", function () {
+                lightboxImg.src = this.src;
+                lightbox.style.display = "flex"; // Restore functionality
+                setTimeout(() => lightbox.classList.add("show"), 10); // Smooth transition
+            });
+        });
+
+        closeLightbox.addEventListener("click", function () {
+            lightbox.classList.remove("show");
+            setTimeout(() => {
+                lightbox.style.display = "none";
+                lightboxImg.src = "";
+            }, 300);
+        });
+
+        lightbox.addEventListener("click", function (e) {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove("show");
+                setTimeout(() => {
+                    lightbox.style.display = "none";
+                    lightboxImg.src = "";
+                }, 300);
+            }
+        });
+
+        window.addEventListener("load", function () {
+            lightbox.classList.remove("show");
+            lightbox.style.display = "none";
+            lightboxImg.src = "";
         });
     }
 });
