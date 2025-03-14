@@ -104,7 +104,7 @@ p {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  background-color: #0077cc;
+  background-color: #372413;
   color: white;
   border: none;
   border-radius: 8px;
@@ -113,7 +113,7 @@ p {
 }
 
 #openMap:hover {
-  background-color: #005fa3;
+  background-color: #FFD3AD;
   transform: scale(1.05);
 }
 
