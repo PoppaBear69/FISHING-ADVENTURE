@@ -6,16 +6,14 @@ permalink: /photos/
 
 ## Photos & Videos
 
-### Photos
+### 📸 Photos
 <div class="gallery">
-    <img src="/images/photo1.jpg" alt="Fishing Spot">
-    <img src="/images/photo2.jpg" alt="Big Catch">
-    <img src="/images/photo3.jpg" alt="Sunset Fishing">
-    <img src="/images/photo4.jpg" alt="On the Boat">
-        
+    {% for image in collections.images %}
+        <img src="{{ image.url }}" alt="Fishing Adventure Photo" class="gallery-item">
+    {% endfor %}
 </div>
 
-### Videos
+### 🎥 Videos
 <div class="videos">
     <video controls>
         <source src="/videos/video1.mp4" type="video/mp4">

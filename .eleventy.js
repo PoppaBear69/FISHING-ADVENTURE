@@ -1,19 +1,30 @@
+const fs = require("fs");
+
 module.exports = function (eleventyConfig) {
-    // ✅ Pass through static assets (images, CSS, JS)
-    eleventyConfig.addPassthroughCopy("src/images"); // Ensures images are copied
-    eleventyConfig.addPassthroughCopy("src/css");    // Ensures styles.css is copied
-    eleventyConfig.addPassthroughCopy("src/js");     // Ensures scripts.js is copied
-  
-    // ✅ Set input and output directories
+    // ✅ Copy static assets
+    eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/js");
+    eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPassthroughCopy("src/videos");
+
+    // ✅ Generate a collection of images dynamically & exclude ocean.jpeg
+    eleventyConfig.addCollection("images", function () {
+        const imgDir = "src/images";
+
+        return fs.readdirSync(imgDir)
+            .filter(file => file.toLowerCase() !== "ocean.jpeg") // ❌ Exclude ocean.jpeg
+            .map(file => ({
+                url: `/images/${file}`,
+                name: file
+            }));
+    });
+
     return {
-      dir: {
-        input: "src",   // Source folder (where your site files are)
-        output: "_site", // Build output folder
-        includes: "_includes", // Where Eleventy looks for layouts/partials
-        data: "_data" // Where global data files are stored
-      },
-      passthroughFileCopy: true,
-      templateFormats: ["html", "md", "liquid", "njk"] // Allowed template formats
+        dir: {
+            input: "src",
+            output: "_site",
+            includes: "_includes",
+            data: "_data"
+        }
     };
-  };
-  
+};
