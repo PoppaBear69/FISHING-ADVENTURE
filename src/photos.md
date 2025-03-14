@@ -3,10 +3,10 @@ title: "Photos & Videos"
 layout: layout.html
 permalink: /photos/
 ---
-## Photos & Videos
+
 
 <div class="gallery">
-    <h2>Fishing Photos</h2>
+    <h2>Photos</h2>
     <div class="photo-row">
         <img src="/images/blue.jpg" alt="Bluefish catch" class="enlargeable">
         <img src="/images/porgy.jpg" alt="Porgy catch" class="enlargeable">
@@ -15,7 +15,7 @@ permalink: /photos/
     </div>
 </div>
 
-<h2>Fishing Videos</h2>
+<h2>Videos</h2>
 <div class="video-row">
     <video controls>
         <source src="/videos/fishing_action.mp4" type="video/mp4">
