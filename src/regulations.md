@@ -4,7 +4,7 @@ layout: layout.html
 permalink: /regulations/
 ---
 
-# Local Fishing Regulations
+
 
 Make sure you stay up to date with the latest fishing regulations in your area.
 
