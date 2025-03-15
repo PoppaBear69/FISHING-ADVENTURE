@@ -300,3 +300,37 @@ p {
   padding: 20px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;  /* Centers the whole heading */
+  align-items: center;
+  text-align: center;
+  gap: 10px;  /* Adjust spacing */
+}
+
+.adventure {
+  position: relative; /* Allows precise placement */
+  display: flex;
+  align-items: center;
+}
+
+.adventure::before {
+  content: "";
+  display: inline-block;
+  width: 200px;  /* Adjust logo size */
+  height: 200px;
+
+  background-image: url("/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: 5px;  /* Space between logo and "Adventure" */
+}
+
+
+
+
+
+
+
