@@ -6,7 +6,7 @@ permalink: /photos/
 
 
 <div class="gallery">
-    <h2>Catches</h2>
+    <h3>Catches</h3>
     <div class="photo-row">
         <img src="/images/blue.jpg" alt="Bluefish catch" class="enlargeable">
         <img src="/images/porgy.jpg" alt="Porgy catch" class="enlargeable">
@@ -18,8 +18,9 @@ permalink: /photos/
 
 
 
-<h2>Action</h2>
+
 <div class="video-row">
+    <h3>Action</h3>
     <video controls>
         <source src="/videos/fishing_action.mp4" type="video/mp4">
         Your browser does not support the video tag.
