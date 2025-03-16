@@ -1,0 +1,11 @@
+# Ignore Eleventy output
+_site/
+.cache/
+*.log
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Ignore system files
+.DS_Store

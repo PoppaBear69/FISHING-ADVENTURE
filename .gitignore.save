@@ -1,0 +1,21 @@
+.DS_Store
+# Ignore Eleventy output
+_site/
+.cache/
+*.log
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Ignore system files
+.DS_Store
+
+
+clean
+cd ~
+git rm -r --cached .
+git add .
+git commit -m "Cleaned up Git tracking and updated .gitignore"
+
+
