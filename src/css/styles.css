@@ -329,13 +329,15 @@ h1 {
 .fishing::after {
   content: "";
   display: inline-block;
-  width: 1.2em; /* Slightly larger than a letter */
-  height: 1.2em;
+  width: 2.5em !important; /* Force increase */
+  height: 2.5em !important;
+  max-width: none;
+  max-height: none;
   background-image: url('/images/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 0.05em; /* Keeps spacing tight */
+  margin-left: 0.05em;
   margin-right: 0.05em;
   vertical-align: middle;
 }
@@ -345,16 +347,17 @@ h1 {
 
 
 
+
 /* Optional: Adjust for smaller screens */
 @media (max-width: 600px) {
-  h1 {
+  /* h1 {
     font-size: clamp(1.5rem, 4vw, 3rem); /* Slightly smaller on mobile */
   }
   .fishing::after {
     width: 1.2em; /* Slightly smaller image */
     height: 1.2em;
   }
-}
+} */
 
 
 
