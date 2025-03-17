@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
    
     if (mapButton && mapPopup && closeMap) {
         mapButton.addEventListener("click", function () {
-            mapPopup.style.display = "flex"; // Restore functionality
-            setTimeout(() => mapPopup.classList.add("show"), 10); // Smooth transition
+            mapPopup.style.display = "flex"; 
+            setTimeout(() => mapPopup.classList.add("show"), 10); 
         });
 
         closeMap.addEventListener("click", function () {
             mapPopup.classList.remove("show");
-            setTimeout(() => (mapPopup.style.display = "none"), 300); // Smoothly hide
+            setTimeout(() => (mapPopup.style.display = "none"), 300);
         });
 
         mapPopup.addEventListener("click", function (e) {
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         images.forEach(img => {
             img.addEventListener("click", function () {
                 lightboxImg.src = this.src;
-                lightbox.style.display = "flex"; // Restore functionality
-                setTimeout(() => lightbox.classList.add("show"), 10); // Smooth transition
+                lightbox.style.display = "flex"; 
+                setTimeout(() => lightbox.classList.add("show"), 10); 
             });
         });
 

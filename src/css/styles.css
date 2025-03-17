@@ -309,27 +309,20 @@ h1 {
   text-align: center;
 }
 
-
-
-
-
-
-
-/* Make sure both words scale together */
 .fishing,
 .adventure {
-  font-size: inherit; /* Inherits from H1 */
-  display: inline-block; /* Keeps layout inline */
+  font-size: inherit; 
+  display: inline-block; 
 }
 .adventure {
-  margin-left: 0.2em; /* Adjust until both sides match */
+  margin-left: 0.2em; 
 }
 
 
 .fishing::after {
   content: "";
   display: inline-block;
-  width: 2.5em !important; /* Force increase */
+  width: 2.5em !important; 
   height: 2.5em !important;
   max-width: none;
   max-height: none;
